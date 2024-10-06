@@ -97,11 +97,15 @@
 @media (max-width: 768px) {
   .imageContainer {
     max-width: 100%;
-    height: 175px; /* Mobilde daha küçük kesim yap */
+    height: 250px; /* Mobilde daha küçük kesim yap */
   }
   .rightSection h3 {
     font-size: small;
     margin: 0;
+  }
+
+  .card {
+    height: 400px;
   }
 
   .linkButton {

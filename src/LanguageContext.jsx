@@ -18,6 +18,8 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("tr");
   const [aboutData, setAboutData] = useState(null);
+  const [lawData, setLawData] = useState(null);
+  const [articles, setArticles] = useState(null);
 
   const hukuklar = [
     {
@@ -81,6 +83,36 @@ export const LanguageProvider = ({ children }) => {
       .catch((err) => console.log(err));
   }, []);
 
+  useEffect(() => {
+    fetch("/Laws.json") // Eğer public klasöründeyse bu yolu kullanın
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Ağ isteği hatası: " + res.status);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data); // Veriyi konsola yazdır
+        setLawData(data); // Veriyi state'e kaydet
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
+  useEffect(() => {
+    fetch("/Articles.json") // Eğer public klasöründeyse bu yolu kullanın
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Ağ isteği hatası: " + res.status);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log("articles", data); // Veriyi konsola yazdır
+        setArticles(data); // Veriyi state'e kaydet
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   // Türkçe metinler
   const quotesTr = ["BAĞIMSIZ", "YENİLİKÇİ", "GÜVENİLİR", "DETAYCI"];
   const aboutTitleTr = "HAKKIMIZDA";
@@ -103,6 +135,10 @@ export const LanguageProvider = ({ children }) => {
   const contactHeaderTr = "İLETİŞİM";
   const contactTitleTr = "BİZE ULAŞIN";
 
+  const articlesTitleTr = "MAKALELER";
+
+  const makaleButtonTr = "TÜM MAKALELER";
+
   // İngilizce metinler
   const quotesEn = ["INDEPENDENT", "INNOVATIVE", "RELIABLE", "DETAILED"];
   const aboutTitleEn = "ABOUT US";
@@ -124,6 +160,9 @@ export const LanguageProvider = ({ children }) => {
   const contactHeaderEn = "CONTACT";
   const contactTitleEn = "GET IN TOUCH";
 
+  const articlesTitleEn = "ARTICLES";
+  const makaleButtonEn = "ALL ARTICLES";
+
   // Metinleri ve dili dinamik olarak döndüren bir fonksiyon
   const getContent = () => {
     if (language === "tr") {
@@ -142,6 +181,10 @@ export const LanguageProvider = ({ children }) => {
         contactHeader: contactHeaderTr,
         contactTitle: contactTitleTr,
         hukuklar: hukuklar,
+        lawData: lawData,
+        articles: articles,
+        articlesTitle: articlesTitleTr,
+        makaleButton: makaleButtonTr,
       };
     } else {
       return {
@@ -159,6 +202,10 @@ export const LanguageProvider = ({ children }) => {
         contactHeader: contactHeaderEn,
         contactTitle: contactTitleEn,
         hukuklar: hukuklar,
+        lawData: lawData,
+        articles: articles,
+        articlesTitle: articlesTitleEn,
+        makaleButton: makaleButtonEn,
       };
     }
   };

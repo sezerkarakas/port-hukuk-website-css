@@ -1,10 +1,11 @@
 import c from "./Home.module.css";
 import Background from "../../assets/resized/law1 (2).jpg";
-
+import ArticleImage from "../../assets/articles/article (1).jpg";
 import { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../LanguageContext"; // Context'ten hook'u getiriyoruz
+import VerticalCard from "../../components/VerticalCard/VerticalCard";
 
 function Home() {
   const { language, getContent } = useLanguage(); // Context'teki değerleri alıyoruz
@@ -39,7 +40,7 @@ function Home() {
         </h1>
       </section>
       <article className={c.aboutContainer}>
-        <h1>{content.aboutTitle}</h1>
+        <h2>{content.aboutTitle}</h2>
         <br />
         <br />
         <p>{content.aboutText1}</p>
@@ -48,8 +49,42 @@ function Home() {
         <br />
         <p>{content.aboutText3}</p>
       </article>
+      <section className={c.verticalCardsContainer}>
+        <h2>{content.articlesTitle}</h2>
+        <br />
+        <br />
+        <section className={c.verticalCards}>
+          {language == "tr"
+            ? content.articles?.articlesTr
+                ?.slice(0, 3)
+                .map((hukuk, i) => (
+                  <VerticalCard
+                    key={i}
+                    title={hukuk.title}
+                    image={ArticleImage}
+                    route={hukuk.id}
+                    text={hukuk.content[0].content.slice(0, 200) + "..."}
+                  />
+                ))
+            : content.articles?.articlesEn
+                ?.slice(0, 3)
+                .map((article, i) => (
+                  <VerticalCard
+                    key={i}
+                    title={article.title}
+                    image={ArticleImage}
+                    route={article.id}
+                    text={article.content[0].content.slice(0, 200) + "..."}
+                  />
+                ))}
+        </section>
+        <br />
+        <Link to={"/makaleler"}>
+          <button className={c.linkButton}>{content.makaleButton}</button>
+        </Link>
+      </section>
       <section className={c.cardsContainer}>
-        <h1>{content.faaliyetTitle}</h1>
+        <h2>{content.faaliyetTitle}</h2>
         <br />
         <br />
         <section className={c.cards}>

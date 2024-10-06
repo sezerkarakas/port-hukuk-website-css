@@ -1,6 +1,6 @@
 {
   "title": "Laws",
-  "content": [
+  "contentTr": [
     {
       "title": "Vatandaşlık",
       "id": "vatandaslik",
@@ -201,7 +201,7 @@
       ]
     }
   ],
-  "content": [
+  "contentEn": [
     {
       "title": "Citizenship",
       "id": "vatandaslik",
@@ -311,93 +311,92 @@
       ]
     },
     {
-      "title": "İmar",
+      "title": "Zoning",
       "id": "imar",
       "content": [
         {
-          "title": "İmar Hukuku Nedir?",
-          "content": "İmar hukuku, kentleşme, yapılaşma ve yerleşim yerlerinin düzenlenmesi ile ilgili kurallar bütünü olan bir hukuk dalıdır. Bu hukuk dalı, arsa ve arazilerin planlanması, yapıların inşası, binaların kullanımı ve çevre düzenlemesi gibi konuları içerir. İmar hukuku, kamu yararı gözetilerek şehirleşmenin sağlıklı bir şekilde yapılmasını hedefler ve toplumun fiziksel mekânlara dair ihtiyaçlarını karşılamayı amaçlar."
+          "title": "What is Zoning Law?",
+          "content": "Zoning law is a branch of law that consists of rules related to urbanization, construction, and the organization of settlements. This field includes topics such as land and site planning, building construction, the use of buildings, and landscaping. Zoning law aims to ensure healthy urbanization by considering the public interest and meeting the community's physical space needs."
         },
         {
-          "title": "İmar Hukukunun Kapsamı",
-          "content": "İmar hukuku, imar planlarının hazırlanması, yapı ruhsatı verilmesi, inşaat süreçlerinin denetlenmesi, kentsel dönüşüm projeleri, çevre düzenlemesi ve yeşil alanların korunması gibi geniş bir kapsamı içerir. Belediyeler, yerel yönetimler ve merkezi idareler tarafından belirlenen imar planları, yapıların ne şekilde yapılacağını ve şehirlerin nasıl düzenleneceğini belirler. Aynı zamanda, imar hukukunda vatandaşların arsa ve binaları üzerinde yapabileceği değişiklikler ve bu değişikliklerin hukuki sınırları düzenlenir."
+          "title": "Scope of Zoning Law",
+          "content": "Zoning law covers a wide range of topics such as the preparation of zoning plans, the issuance of building permits, the supervision of construction processes, urban transformation projects, environmental regulation, and the protection of green areas. Zoning plans, determined by municipalities, local governments, and central administrations, regulate how buildings will be constructed and how cities will be organized. It also regulates the legal limits of the changes that citizens can make on their land and buildings."
         },
         {
-          "title": "İmar Hukukunun Önemi",
-          "content": "İmar hukuku, düzenli ve planlı şehirleşmenin sağlanmasında hayati bir rol oynar. Kaçak yapılaşmanın önüne geçerek çevreye ve insan yaşamına zarar verebilecek yapıların inşasını engeller. Aynı zamanda şehirlerin düzenli gelişmesini sağlayarak toplumsal yaşam kalitesini artırır. Çevreye duyarlı ve sürdürülebilir bir yapılaşma sürecini destekleyen imar hukuku, sağlıklı yaşam alanlarının yaratılmasını ve kent estetiğinin korunmasını amaçlar. Planlı şehirleşme, afetlere karşı dayanıklı yapıların inşası ve çevresel denge, bu hukuk dalının temel amaçları arasında yer alır."
+          "title": "Importance of Zoning Law",
+          "content": "Zoning law plays a crucial role in ensuring orderly and planned urbanization. It prevents illegal construction and prohibits the construction of buildings that could harm the environment and human life. At the same time, it ensures the regular development of cities, enhancing the quality of social life. Zoning law supports environmentally friendly and sustainable construction processes, aiming to create healthy living spaces and preserve urban aesthetics. Planned urbanization, the construction of structures resistant to disasters, and environmental balance are among the fundamental goals of this field."
         }
       ]
     },
     {
-      "title": "Miras",
+      "title": "Inheritance",
       "id": "miras",
       "content": [
         {
-          "title": "Miras Hukuku Nedir?",
-          "content": "Miras hukuku, bir kişinin ölümü halinde malvarlığının kimlere ve nasıl devredileceğini düzenleyen hukuk dalıdır. Bu hukuk dalı, mirasçıların hakları, mirasın paylaşımı ve mirasla ilgili uyuşmazlıkların çözümüne ilişkin düzenlemeler içerir. Aynı zamanda, vasiyetname, miras payları ve mirastan feragat gibi konular da miras hukukunun temel unsurları arasında yer alır."
+          "title": "What is Inheritance Law?",
+          "content": "Inheritance law is the branch of law that regulates to whom and how a person's assets will be transferred upon their death. This field includes regulations on the rights of heirs, the division of inheritance, and the resolution of disputes related to inheritance. Testamentary wills, inheritance shares, and renunciation of inheritance are also key elements of inheritance law."
         },
         {
-          "title": "Miras Hukukunun Kapsamı",
-          "content": "Miras hukuku, miras bırakan kişinin malvarlığının mirasçılar arasında nasıl paylaşılacağına ilişkin kuralları içerir. Yasal ve atanmış mirasçıların hakları, miras payları, tereke tespiti, mirasçılar arasında anlaşmazlıkların çözümü gibi konular bu kapsamda yer alır. Ayrıca, vasiyetnamenin geçerlilik şartları, mirastan feragat ve miras paylaşımında sulh gibi süreçler de miras hukukunun önemli konuları arasındadır."
+          "title": "Scope of Inheritance Law",
+          "content": "Inheritance law includes rules regarding how the deceased person's assets will be shared among heirs. The rights of legal and appointed heirs, inheritance shares, the determination of the estate, and the resolution of disputes among heirs are included in this scope. Additionally, the conditions for the validity of wills, renunciation of inheritance, and conciliation in the distribution of inheritance are important topics in inheritance law."
         },
         {
-          "title": "Miras Hukukunun Önemi",
-          "content": "Miras hukuku, malvarlığının adil bir şekilde dağıtılmasını sağlayarak mirasçıların haklarını korur. Bireylerin ölümünden sonra malvarlıklarının yasal düzenlemelere uygun şekilde devredilmesini sağlayarak toplumsal düzenin korunmasına katkıda bulunur. Aynı zamanda, mirasçılar arasında çıkabilecek uyuşmazlıkları önlemek veya çözmek için hukuki bir temel sağlar ve aile bireylerinin maddi güvenliğini teminat altına alır."
+          "title": "Importance of Inheritance Law",
+          "content": "Inheritance law protects the rights of heirs by ensuring the fair distribution of assets. It contributes to the preservation of social order by ensuring the transfer of assets in accordance with legal regulations after the death of individuals. It also provides a legal basis for preventing or resolving disputes among heirs and ensures the financial security of family members."
         }
       ]
     },
     {
-      "title": "Aile",
+      "title": "Family",
       "id": "aile",
       "content": [
         {
-          "title": "Aile Hukuku Nedir?",
-          "content": "Aile hukuku, aile bireyleri arasındaki hak ve yükümlülükleri düzenleyen bir hukuk dalıdır. Evlilik, boşanma, nafaka, velayet, mal rejimi, evlat edinme gibi konuları kapsayan aile hukuku, bireyler arasındaki aile ilişkilerinin nasıl yürütüleceğine ilişkin kurallar koyar. Aile hukukunun temel amacı, aile içi ilişkileri düzenlemek ve korumaktır."
+          "title": "What is Family Law?",
+          "content": "Family law is the branch of law that regulates the rights and obligations between family members. Covering topics such as marriage, divorce, alimony, custody, property regime, and adoption, family law sets out the rules regarding how family relationships should be conducted. The primary goal of family law is to regulate and protect family relations."
         },
         {
-          "title": "Aile Hukukunun Kapsamı",
-          "content": "Aile hukuku, evlilik sözleşmesinden başlayarak, boşanma ve mal paylaşımına kadar aile bireylerinin hak ve sorumluluklarını kapsar. Boşanma süreci, nafaka talepleri, çocukların velayeti, mal paylaşımı, evlat edinme, soybağı gibi konular bu hukuk dalının kapsamına girer. Ayrıca aile içi şiddet, aile bireylerinin korunması ve hukuki yardımlaşma gibi konular da aile hukukunun düzenlediği alanlar arasındadır."
+          "title": "Scope of Family Law",
+          "content": "Family law covers the rights and responsibilities of family members from the marriage contract to divorce and property division. Topics such as the divorce process, alimony claims, child custody, property division, adoption, and lineage are included in this scope. Additionally, issues such as domestic violence, the protection of family members, and legal assistance are areas regulated by family law."
         },
         {
-          "title": "Aile Hukukunun Önemi",
-          "content": "Aile hukuku, bireylerin en temel sosyal yapı olan aile içerisindeki ilişkilerini düzenleyerek toplumsal düzenin korunmasına katkıda bulunur. Aile içinde meydana gelen anlaşmazlıkların hukuki zeminde çözümlenmesini sağlar. Aynı zamanda, çocukların ve diğer aile bireylerinin haklarını güvence altına alarak sosyal adaleti temin eder. Aile hukuku, bireylerin duygusal ve ekonomik güvenliğini sağlayarak toplumsal huzuru artırır."
+          "title": "Importance of Family Law",
+          "content": "Family law contributes to the preservation of social order by regulating relationships within the most fundamental social unit, the family. It ensures that disputes within the family are resolved on a legal basis. At the same time, it guarantees the rights of children and other family members, providing social justice. Family law enhances social harmony by ensuring the emotional and economic security of individuals."
         }
       ]
     },
-
     {
-      "title": "Kişisel Verilerin Korunması",
+      "title": "Protection of Personal Data",
       "id": "kisisel-veriler",
       "content": [
         {
-          "title": "Kişisel Verilerin Korunması Hukuku Nedir?",
-          "content": "Kişisel verilerin korunması hukuku, bireylerin kişisel bilgilerinin toplanması, işlenmesi ve saklanması süreçlerinde mahremiyetlerinin korunmasını sağlayan hukuk dalıdır. Kişisel verilerin hukuka uygun bir şekilde işlenmesini ve bu süreçte bireylerin temel hak ve özgürlüklerinin korunmasını amaçlar. Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ve Türkiye’deki Kişisel Verilerin Korunması Kanunu (KVKK) bu alandaki temel düzenlemeleri içermektedir."
+          "title": "What is Personal Data Protection Law?",
+          "content": "Personal data protection law is a branch of law that ensures the protection of individuals' privacy in the processes of collecting, processing, and storing personal information. It aims to ensure the lawful processing of personal data while protecting individuals' fundamental rights and freedoms. The General Data Protection Regulation (GDPR) in the European Union and Turkey's Personal Data Protection Law (KVKK) contain the main regulations in this field."
         },
         {
-          "title": "Kişisel Verilerin Korunması Hukukunun Kapsamı",
-          "content": "Bu hukuk dalı, kişisel verilerin toplanması, işlenmesi, saklanması ve üçüncü kişilerle paylaşılması süreçlerini düzenler. Veri sorumlularının yükümlülükleri, veri sahiplerinin hakları, açık rıza, veri güvenliği önlemleri, verilerin silinmesi ve anonim hale getirilmesi gibi konular kişisel verilerin korunması hukukunun kapsamındadır. Ayrıca, veri ihlallerinde yaptırımlar ve denetleyici kurumların yetkileri de bu kapsamda yer alır."
+          "title": "Scope of Personal Data Protection Law",
+          "content": "This branch of law regulates the processes of collecting, processing, storing, and sharing personal data with third parties. The responsibilities of data controllers, the rights of data subjects, explicit consent, data security measures, the deletion and anonymization of data are within the scope of personal data protection law. Additionally, sanctions for data breaches and the powers of supervisory authorities are also included in this scope."
         },
         {
-          "title": "Kişisel Verilerin Korunması Hukukunun Önemi",
-          "content": "Kişisel verilerin korunması hukuku, bireylerin mahremiyet haklarının korunması açısından büyük bir öneme sahiptir. Teknolojinin gelişmesiyle birlikte dijital dünyada artan veri işleme faaliyetleri, kişisel bilgilerin kötüye kullanılmasını önlemek için hukuki düzenlemelere ihtiyaç doğurmuştur. Kişisel verilerin hukuka uygun bir şekilde işlenmesi, bireylerin özel yaşamına saygı gösterilmesi ve veri güvenliğinin sağlanması, bu hukuk dalının temel amaçları arasındadır."
+          "title": "Importance of Personal Data Protection Law",
+          "content": "Personal data protection law is of great importance in terms of safeguarding individuals' privacy rights. With the advancement of technology and the increasing data processing activities in the digital world, there has been a need for legal regulations to prevent the misuse of personal information. The lawful processing of personal data, respect for individuals' private lives, and ensuring data security are among the primary goals of this branch of law."
         }
       ]
     },
     {
-      "title": "Bilişim",
+      "title": "Information Technology",
       "id": "bilisim",
       "content": [
         {
-          "title": "Bilişim Hukuku Nedir?",
-          "content": "Bilişim hukuku, bilgi teknolojileri ve dijital dünyadaki faaliyetlerin hukuki boyutlarını düzenleyen bir hukuk dalıdır. İnternet, yazılım, elektronik ticaret, dijital içerik ve veri güvenliği gibi konular bilişim hukukunun başlıca düzenleme alanlarını oluşturur. Teknolojinin hızla gelişmesiyle birlikte internet ve dijital platformlar üzerindeki faaliyetlerin düzenlenmesi ihtiyacı doğmuştur ve bu da bilişim hukukunun önemini artırmıştır."
+          "title": "What is Information Technology Law?",
+          "content": "Information technology law is the branch of law that regulates the legal aspects of activities in the field of information technology and the digital world. Topics such as the internet, software, electronic commerce, digital content, and data security are the main regulatory areas of information technology law. The rapid development of technology has created a need to regulate activities on the internet and digital platforms, increasing the importance of this branch of law."
         },
         {
-          "title": "Bilişim Hukukunun Kapsamı",
-          "content": "Bilişim hukuku, internet üzerinden yapılan işlemler, dijital ticaret, veri güvenliği, kişisel verilerin korunması, dijital sözleşmeler, telif hakları ihlalleri, siber suçlar, bilişim sistemleri üzerindeki dolandırıcılık ve haksız rekabet gibi çok geniş bir alanı kapsar. Ayrıca, bilişim suçları ve bu suçlara karşı alınacak hukuki tedbirler de bilişim hukukunun düzenleme alanındadır. İnternetteki ifade özgürlüğü, dijital içeriklerin korunması ve elektronik delillerin hukuki süreçlerde kullanımı gibi konular da bu hukuk dalının önemli unsurları arasında yer alır."
+          "title": "Scope of Information Technology Law",
+          "content": "Information technology law covers a broad range of areas such as transactions carried out over the internet, digital commerce, data security, personal data protection, digital contracts, copyright violations, cybercrimes, fraud on information systems, and unfair competition. Additionally, information technology law regulates IT crimes and the legal measures to be taken against these crimes. Issues such as freedom of expression on the internet, the protection of digital content, and the use of electronic evidence in legal processes are also key elements of this branch of law."
         },
         {
-          "title": "Bilişim Hukukunun Önemi",
-          "content": "Bilişim hukuku, dijital çağda bireylerin, kurumların ve devletlerin internet üzerindeki faaliyetlerini güvence altına alır. Siber saldırıların artması ve kişisel verilerin dijital ortamda işlenmesi nedeniyle veri güvenliği ve bireysel hakların korunması kritik hale gelmiştir. Aynı zamanda dijital platformlar üzerindeki ticari işlemler ve sözleşmelerin hukuka uygun bir şekilde yürütülmesi, bilişim hukuku sayesinde düzenlenir. Bilişim hukuku, dijital dünyada adaletin sağlanmasını, bireylerin haklarının korunmasını ve internet üzerinden yapılan işlemlerin güvence altına alınmasını sağlar."
+          "title": "Importance of Information Technology Law",
+          "content": "Information technology law secures the online activities of individuals, institutions, and governments in the digital age. With the increase in cyber-attacks and the processing of personal data in digital environments, data security and the protection of individual rights have become critical. At the same time, information technology law regulates the lawful conduct of commercial transactions and contracts on digital platforms. It ensures justice in the digital world, protects the rights of individuals, and secures transactions conducted over the internet."
         }
       ]
     }

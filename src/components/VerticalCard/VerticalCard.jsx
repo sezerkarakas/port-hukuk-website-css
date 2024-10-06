@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 function VerticalCard({ image, text = null, title = "Vatandaşlık", route }) {
   // Renk için state tanımlıyoruz
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState("black");
 
   // useEffect ile her saniyede bir renk değiştirme işlemi yapacağız
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setColor((prevColor) => (prevColor === "blue" ? "black" : "darkblue"));
+      setColor((prevColor) => (prevColor === "blue" ? "black" : "blue"));
     }, 2000);
 
     // Temizleme işlemi
@@ -26,7 +26,7 @@ function VerticalCard({ image, text = null, title = "Vatandaşlık", route }) {
         <h3>{title}</h3>
         <p className={c.text}>{text}</p>
         {/* Buton rengini state'den aldığımız `color` ile ayarlıyoruz */}
-        <Link style={{ color: color }} className={c.linkTag}>
+        <Link to={`${route}`} style={{ color: color }} className={c.linkTag}>
           DETAYLI BİLGİ
         </Link>
       </div>

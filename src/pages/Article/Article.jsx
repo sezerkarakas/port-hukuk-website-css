@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from "react";
-import c from "./Laws.module.css";
+import c from "./Article.module.css";
 import Background from "../../assets/resized/pexels-pixabay-159832.jpg";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "../../LanguageContext";
+import ArticleImage from "../../assets/articles/article (1).jpg";
 
-function Laws() {
+function Article() {
   const location = useLocation();
 
   const { language, getContent } = useLanguage();
-  const lawData = getContent().lawData;
+  const articles = getContent().articles;
 
   return (
     <>
-      {lawData && language == "tr"
-        ? lawData.contentTr?.map((item, i) => {
+      {articles && language == "tr"
+        ? articles.articlesTr?.map((item, i) => {
             return (
               item.id === location.pathname.slice(1).toLowerCase() && (
-                <main  className={c.container}>
+                <main className={c.container}>
                   <section key={i} className={c.imageContainer}>
                     <img
                       className={c.croppedImage}
-                      src={Background}
+                      src={ArticleImage}
                       alt="laws image"
                     />
                     <h1 className={c.textOverlay}>
-                      {item.title.toUpperCase()} HUKUKU
+                      {item.title.toUpperCase()}
                     </h1>
                   </section>
                   <article className={c.aboutContainer}>
@@ -35,7 +35,9 @@ function Laws() {
                       {item.content.map((subItem, subIndex) => (
                         <div key={subIndex}>
                           <h3>{subItem.title}</h3>
+                          <br />
                           <p>{subItem.content}</p>
+                          <br />
                           <br />
                         </div>
                       ))}
@@ -45,18 +47,18 @@ function Laws() {
               )
             );
           })
-        : lawData.contentEn?.map((item, i) => {
+        : articles?.articlesEn?.map((item, i) => {
             return (
               item.id === location.pathname.slice(1).toLowerCase() && (
                 <main className={c.container}>
                   <section key={i} className={c.imageContainer}>
                     <img
                       className={c.croppedImage}
-                      src={Background}
+                      src={ArticleImage}
                       alt="laws image"
                     />
                     <h1 className={c.textOverlay}>
-                      {item.title.toUpperCase()} LAW
+                      {item.title.toUpperCase()}
                     </h1>
                   </section>
                   <article className={c.aboutContainer}>
@@ -67,7 +69,9 @@ function Laws() {
                       {item.content.map((subItem, subIndex) => (
                         <div key={subIndex}>
                           <h3>{subItem.title}</h3>
+                          <br />
                           <p>{subItem.content}</p>
+                          <br />
                           <br />
                         </div>
                       ))}
@@ -81,4 +85,4 @@ function Laws() {
   );
 }
 
-export default Laws;
+export default Article;
