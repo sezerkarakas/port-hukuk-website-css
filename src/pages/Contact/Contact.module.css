@@ -1,0 +1,150 @@
+/* Ana container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+/* Resim için container */
+.imageContainer {
+  position: relative; /* Yazıyı görüntü üzerinde konumlandırmak için gerekli */
+  width: 100%;
+  max-width: 2560px;
+  height: auto;
+  max-height: 700px;
+  overflow: hidden; /* Taşan kısımları gizle */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Yazıyı görüntü üzerinde konumlandırmak için gerekli */
+  width: 60%;
+  height: 100%;
+  font-size: large;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Yazıyı görüntü üzerinde konumlandırmak için gerekli */
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  box-sizing: border-box;
+}
+.cards {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Resim */
+.croppedImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Görüntüyü keserek kutuya sığdırır */
+  filter: blur(4px) brightness(0.7);
+}
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Merkezde konumlandırır */
+  color: white;
+  font-size: 3.5vw;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2); /* Arka planı yarı şeffaf yapar */
+  padding: 0.5vw 1vw;
+  border-radius: 8px;
+  text-align: center;
+}
+.logoAndContact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Yazıyı görüntü üzerinde konumlandırmak için gerekli */
+  width: 20%;
+}
+
+.logoContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Görüntüyü keserek kutuya sığdırır */
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Yazıyı görüntü üzerinde konumlandırmak için gerekli */
+  width: 80%;
+  height: 100%;
+  font-size: large;
+  /* background-color: burlywood; */
+}
+
+.contactContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mapContainer {
+  position: relative; /* Yazıyı görüntü üzerinde konumlandırmak için gerekli */
+  width: 60%;
+  max-width: 2560px;
+  height: auto;
+  max-height: 700px;
+  overflow: hidden; /* Taşan kısımları gizle */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.1); */
+  margin: 50px 0;
+}
+
+/* Mobil için düzenleme */
+@media (max-width: 768px) {
+  .imageContainer {
+    max-width: 100%;
+    height: 200px; /* Mobilde daha küçük kesim yap */
+  }
+  .aboutContainer {
+    width: 80%;
+    font-size: small;
+  }
+  .contactContainer{
+    width: 100%;
+    font-size: small;
+  }
+  .logoAndContact{
+    flex-direction: column-reverse;
+  }
+  .logoContainer{
+    width: 80%;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .mapContainer {
+    width: 100%;
+  }
+}
