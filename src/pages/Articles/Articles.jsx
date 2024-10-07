@@ -4,6 +4,7 @@ import Background from "../../assets/resized/makale2.jpg";
 import VerticalCard from "../../components/VerticalCard/VerticalCard";
 import ArticleImage from "../../assets/articles/article (1).jpg";
 import { useLanguage } from "../../LanguageContext";
+import { Helmet } from "react-helmet";
 
 function Articles() {
   const { language, getContent } = useLanguage();
@@ -13,38 +14,44 @@ function Articles() {
   console.log(articles);
 
   return (
-    <main className={c.container}>
-      <section className={c.imageContainer}>
-        <img className={c.croppedImage} src={Background} alt="works image" />
-        <h1 className={c.textOverlay}>{content.articlesTitle}</h1>
-      </section>
+    <>
+      <Helmet>
+        <title>{content.articlesTitle} - PORT HUKUK</title>
+        <meta name="description" content="Bu sayfada devamlı güncellenen makalelerimizi okuyabilirsiniz." />
+      </Helmet>
+      <main className={c.container}>
+        <section className={c.imageContainer}>
+          <img className={c.croppedImage} src={Background} alt="works image" />
+          <h1 className={c.textOverlay}>{content.articlesTitle}</h1>
+        </section>
 
-      <section className={c.cardsContainer}>
-        <br />
-        <br />
-        <div className={c.cards}>
-          {language == "tr"
-            ? articles?.articlesTr?.map((hukuk, i) => (
-                <VerticalCard
-                  key={i}
-                  title={hukuk.title}
-                  image={ArticleImage}
-                  route={hukuk.id}
-                  text={hukuk.content[0].content.slice(0, 200) + "..."}
-                />
-              ))
-            : articles?.articlesEn?.map((article, i) => (
-                <VerticalCard
-                  key={i}
-                  title={article.title}
-                  image={ArticleImage}
-                  route={article.id}
-                  text={article.content[0].content.slice(0, 200) + "..."}
-                />
-              ))}
-        </div>
-      </section>
-    </main>
+        <section className={c.cardsContainer}>
+          <br />
+          <br />
+          <div className={c.cards}>
+            {language == "tr"
+              ? articles?.articlesTr?.map((hukuk, i) => (
+                  <VerticalCard
+                    key={i}
+                    title={hukuk.title}
+                    image={ArticleImage}
+                    route={hukuk.id}
+                    text={hukuk.content[0].content.slice(0, 200) + "..."}
+                  />
+                ))
+              : articles?.articlesEn?.map((article, i) => (
+                  <VerticalCard
+                    key={i}
+                    title={article.title}
+                    image={ArticleImage}
+                    route={article.id}
+                    text={article.content[0].content.slice(0, 200) + "..."}
+                  />
+                ))}
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
 
